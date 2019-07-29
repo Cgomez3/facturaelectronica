@@ -1,0 +1,304 @@
+<html>
+<head>
+<style>
+body.general-body {
+    background-image: url("img/fondo2.png");
+}
+.contenedor-head{
+    background-image: linear-gradient(rgb(181, 159, 123) 0%, rgb(193, 158, 103) 32%, rgb(189, 148, 86) 49%, rgb(125, 112, 90) 100%);
+    width: 100%;
+    height: 3rem;
+}
+
+.icono-menu-lateral{    
+    float: left;
+    padding: 11.5px; 
+}
+.icono-menu-lateral:hover{
+    background-color: #bdaf9ae6;
+}
+.contenedor-icono {
+    background-image: url(img/menu.png);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    border: 0px solid;
+}
+
+.logo-head {
+    background-color: antiquewhite;
+    width: 9rem;
+    height: 100%;
+    float: left;
+}
+.logo-head-img{
+    width: 9rem;
+    height: 3rem;
+}
+
+.menu-head {
+    height: 100%;
+    float: left;
+    margin-left: 18px;
+}
+
+.item-menu-head{
+    width: 6rem;
+    height: 2.5rem;
+    float: left;
+    border-right: 1px solid #075a28;
+    background-color: #538667;
+    margin-top: 4px;
+    border-radius: 5px;
+    margin-left: 2px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+.item-menu-head:hover{
+    background-color: #69997b;
+}
+
+.item-menu {
+    margin-top: 10px;
+    
+}
+.item-menu:hover{
+    text-decoration: underline;
+}
+.menu-lateral-detalle {
+    position: absolute;
+    border: 1px solid;
+    background-color: #937d59;
+    margin-left: -13px;
+    margin-top: 12px;
+    display: none;
+}
+.contenedor-ul{
+    width: 123px;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+.item-li {
+    padding-right: 12px;
+    height: 27px;
+    text-decoration: none;
+    border-top: 1px solid;
+    padding-top: 6px;
+}
+.texto-li {
+    text-decoration: none;
+    color: white;
+    padding-left: 8px;
+}
+.texto-li:hover{
+    text-decoration: underline;
+}
+.vista-slider {
+    width: 54rem;
+    height: 84%;
+    margin: 0 auto;
+    margin-top: 8px;
+    border-radius: 6px;
+}
+.siguiente-left {
+    width: 17px;
+    height: 100%;
+    background-color: #b4caca99;
+    float: left;
+    border-radius: 6px 0px 0px 6px;
+}
+.siguiente-right {
+    width: 17px;
+    height: 100%;
+    background-color: #b4caca99;
+    float: left;
+    margin: 0 0 0 auto;
+    border-radius: 0px 6px 6px 0px;
+}
+.contenedor-imagenes {
+    width: 51.8rem;
+    background-color: beige;
+    height: 100%;
+    float: left;
+}
+img.imagen-slider {
+    width: 51.8rem;
+    height: 31.1rem;
+}
+.imagenes-slider {
+    float: left;
+    position: absolute;
+}
+.Nosotros {
+    background-color: #d2ccc27d;
+    margin-top: 23px;
+    margin-left: 32px;
+    border-radius: 5px;
+    padding: 16px;
+    margin-right: 32px;
+    margin-bottom: 23px;
+}
+.Informacion{
+    background-color: #d2ccc27d;
+    margin-top: 23px;
+    margin-left: 32px;
+    border-radius: 5px;
+    padding: 16px;
+    margin-right: 32px;
+    margin-bottom: 23px;
+    text-align: center;
+}
+.realizamos{
+    background-color: #d2ccc27d;
+    margin-top: 23px;
+    margin-left: 32px;
+    border-radius: 5px;
+    padding: 16px;
+    margin-right: 32px;
+    margin-bottom: 23px;
+    text-align: left;
+}
+.parrafo {
+    color: white;
+    font-size: 19px;
+}
+
+</style>
+</head>
+<body class="general-body">
+<div class="contenedor-head">
+    <div id="idMenu" class="icono-menu-lateral">
+        <div  class="contenedor-icono"></div>
+        <div id="idMenuDetalle" class="menu-lateral-detalle">
+              <ul class="contenedor-ul">
+                  <li id="btnInicioBuscar" class="item-li"><a class="texto-li" href="#">Inicio</a></li>
+                  <li id="btnNosotrosBuscar" class="item-li"><a class="texto-li" href="#">Nosotros</a></li>
+              </ul>
+        </div>
+    </div>
+<div class="logo-head" style="display: none">
+  <img class="logo-head-img" src="img/imagenweb.jpg"/>
+</div>
+<div class="menu-head">
+    <div class="item-menu-head">
+        <div class="item-menu">
+                <span >Inicio</span>
+        </div>        
+    </div>
+    <div class="item-menu-head">
+        <div class="item-menu">
+                <span >Nosotros</span>
+        </div>
+        
+    </div>
+</div>
+</div>  
+<div class="contenedor-body">
+ <div class="vista-slider">
+     <div id="btnLeft" class="siguiente-left"></div>
+     <div class="contenedor-imagenes">
+         <div class="imagenes-slider">
+             <img class="imagen-slider" src="img/facturaelect.jpg">
+         </div>
+         <div class="imagenes-slider fondoslide2" >
+            <img class="imagen-slider" src="img/factura-electronica.jpg">
+         </div>
+         <div class="imagenes-slider fondoslide3">
+            <img class="imagen-slider" src="img/web-responsive.jpg">
+         </div>
+     </div>
+     <div id="btnRight" class="siguiente-right"></div>
+ </div>
+
+ <div class="Informacion">
+        <h1>Factura desde los sistema del contribuyente</h1>
+        <p class="parrafo">¿Cómo opera la facturación electrónica?</p> 
+         <img src="img/infografia.png" alt="">
+         
+    </div>
+</div>
+<div class="realizamos">
+        <h1>REALIZAMOS LO SIGUIENTE:</h1>
+         <p class="parrafo">- Creamos Aplicaciones WEB.</p>
+         <p class="parrafo">- Creamos Aplicaciones MOVIL.</p>
+         <p class="parrafo">- Creamos Aplicaciones DE ESCRITORIO.</p>
+         <p class="parrafo">- Migramos la facturación Electronica desde tu Aplicación.</p> 
+         <p class="parrafo">- Creamos DLL para FACTURACION ELECTRONICA.</p>
+         <p class="parrafo">- Damos Soporte Tecnico De aplicaciones().</p>
+         <p class="parrafo">- Modificamos las aplicaciones creadas y segun solicitud de tus Requerimientos.</p>
+         
+    </div>
+</div>
+<div class="Nosotros">
+        <h1>Nosotros</h1>
+       <p class="parrafo"> Somos un grupo de jóvenes talentosos especialistas en software, creamos aplicaciones Web, Móvil, ERPs Escritorio, analizamos tu negocio y lo convertimos en una plataforma virtual ya sea en la nube o de manera local. Implementamos Dlls para Factura Electrónica según las especificaciones que exige la SUNAT para firmar documentos XML como: Facturas, boletas, notas de crédito, débito, comprobantes de percepción electrónicas.</p>
+</div>
+
+<script>
+var idMenu = document.getElementById('idMenu');
+var idMenuDetalle= document.getElementById('idMenuDetalle');
+
+idMenu.onmouseover =function(e){
+    e.preventDefault();
+    idMenuDetalle.style.display='block';
+};
+idMenu.onmouseout=function(e){
+    e.preventDefault();
+    idMenuDetalle.style.display='none';
+};
+var slideIndex = 0;
+showSlides();
+
+var botonleft = document.getElementById("btnLeft");
+var botonright = document.getElementById("btnRight");
+
+
+botonleft.addEventListener('click',function(e){
+  e.preventDefault();
+   
+   clickSlide(1);
+});
+
+botonright.addEventListener('click',function(e){
+  e.preventDefault();
+  clickSlide(-1);
+});
+
+btnNosotrosBuscar.addEventListener('click',function(e){
+    document.querySelectorAll(".div")[3];
+});
+
+function clickSlide(index){
+    var slides = document.getElementsByClassName("imagenes-slider");
+       
+       slideIndex = index + slideIndex ;
+       
+       if(slideIndex < 3){
+        var i;       
+       for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+       }
+        slides[slideIndex].style.display = "block";
+       }
+       
+       
+}
+function showSlides() {
+    var slides = document.getElementsByClassName("imagenes-slider");
+       var i;       
+       for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+       }
+       slideIndex++;
+       if(slideIndex > slides.length) {slideIndex = 1}
+       slides[slideIndex-1].style.display = "block";
+       setTimeout(showSlides,5000);
+}
+</script>
+</body>
+</html>
